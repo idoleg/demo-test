@@ -4,7 +4,7 @@ function memize(callback) {
     return (...args) => {
         const argsHash = args.join();
 
-        if (!(argsHash in memo)) {
+        if (!memo[argsHash]) {
             memo[argsHash] = callback(...args);
         }
         return memo[argsHash];
