@@ -1,0 +1,19 @@
+{
+  "name": "demo-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src/**.js test/**.js",
+    "format": "npm run lint -- --fix",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.6.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0"
+  }
+}
